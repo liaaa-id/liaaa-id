@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Transaksi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Library GLYZ</a>
+    <ul class="navbar">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="Buku.html">Book</a></li>
+    </ul>
+    <button href="loginn.html" class="btn">Login</button>
+    <a href="transaksi.html" class="beli"></a>
+    <div class="nav_icon">
+        <a href="#"> <i class="fa-solid fa-magnifying-glass"></a></i>
+        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        </div>
+  </header>
+  
+  <section class="form-container">
+    <h1>Form Transaksi</h1>
+    <form id="transaksiForm">
+      <label for="name">Nama Lengkap:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan Nama Lengkap" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+
+      <label for="book">Judul Buku:</label>
+      <input type="text" id="book" name="book" placeholder="Masukkan Judul Buku" required>
+
+      <label for="quantity">Jumlah Buku:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Masukkan Jumlah Buku" required>
+
+      <label for="date">Tanggal Peminjaman:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="returnDate">Tanggal Pengembalian:</label>
+      <input type="date" id="returnDate" name="returnDate" required>
+
+      <button type="submit" class="btn">Submit</button>
+      <button type="reset" class="btn reset">Reset</button>
+    </form>
+    <div id="successMessage" class="hidden">Transaksi berhasil! Terima kasih.</div>
+  </section>
+  <section class="table-section">
+    <h2>Daftar Transaksi</h2>
+    <table border="10">
+        <thead>
+            <tr>
+                <th>Nama Lengkap</th>
+                <th>Alamat Pengiriman</th>
+                <th>Judul buku</th>
+                <th>Jumlah</th>
+                <th>Nomor Telepon</th>
+            </tr>
+            <tr>
+              <td>Laudy</td>
+              <td>jl. raya indah78</td>
+              <td>Utbk 2023</td>
+              <td>1</td>
+              <td>089789897</td>
+            </tr>
+            tr>
+              <td>Jhonny</td>
+              <td>jl. raya budi 01</td>
+              <td>buku cerita</td>
+              <td>2</td>
+              <td>08978909</td>
+            </tr>
+            tr>
+              <td>Mark</td>
+              <td>Komplek Graha raya</td>
+              <td>Buku sains</td>
+              <td>1</td>
+              <td>08978930</td>
+            </tr>
+            tr>
+              <td>Doni</td>
+              <td>Cluster park blok.A</td>
+              <td>Cerpen</td>
+              <td>5</td>
+              <td>089789897</td>
+            </tr>
+            tr>
+              <td>Fika</td>
+              <td>Cluster Pim</td>
+              <td>Buku bergambar</td>
+              <td>7</td>
+              <td>089720000</td>
+            </tr>
+            tr>
+              <td>Elang</td>
+              <td>Gang rukun</td>
+              <td>Buku Geografis</td>
+              <td>1</td>
+              <td>089789897</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data transaksi akan muncul di sini -->
+        </tbody>
+    </table>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Perpustakaan GLYZ .</p>
+  <div class="social-icons">
+      <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="ig.jpg" alt="Instagram"></a>
+      <a href="#"><img src="Twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="tiktok.jpg" alt="Tiktok"></a>
+  </div>
+</footer>
+</body>
+</html>
+
+  <style>
+    body {
+    padding-top: 100px; /* Sesuaikan dengan tinggi header */
+}
+
+.homepage-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Tinggi header */
+    z-index: 1000;
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto 20px; /* Tambahkan margin atas untuk menghindari header */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form .btn {
+  width: 48%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+form .btn {
+  background-color: #92cefc;
+}
+
+form .btn:hover {
+  background-color: #59ccfd;
+}
+
+form .reset {
+  background-color: #edfa95;
+}
+
+form .reset:hover {
+  background-color: #59fcd6;
+}
+
+/* Pesan Sukses */
+.hidden {
+  display: none;
+}
+
+#successMessage {
+  text-align: center;
+  margin-top: 20px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+.container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #c7f425;
+    color: #333;
+}
+tr{
+  background-color: rgb(22, 146, 203);
+  color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background:rgb(127,148,255);
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer .social-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+  </style>
+
+  <script >
+    document.getElementById("transaksiForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Mencegah reload halaman
+
+  // Mengambil data input
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const book = document.getElementById("book").value;
+  const quantity = document.getElementById("quantity").value;
+  const date = document.getElementById("date").value;
+  const returnDate = document.getElementById("returnDate").value;
+
+  // Validasi sederhana
+  if (!name || !email || !book || !quantity || !date || !returnDate) {
+    alert("Harap isi semua kolom!");
+    return;
+  }
+
+  // Menampilkan pesan sukses
+  document.getElementById("successMessage").classList.remove("hidden");
+
+  // Reset form
+  setTimeout(() => {
+    document.getElementById("transaksiForm").reset();
+    document.getElementById("successMessage").classList.add("hidden");
+  }, 3000); // Sembunyikan pesan sukses setelah 3 detik
+});
+
+  </script>
+</body>
+</html>

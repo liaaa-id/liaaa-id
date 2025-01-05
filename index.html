@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Library GLYZ</a>
+    <ul class="navbar">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="Buku.html">Book</a></li>
+    </ul>
+
+     <a href="loginn.html" class="btn">Login</a>
+
+     <div class="nav_icon">
+     <a href="#"> <i class="fa-solid fa-magnifying-glass"></a></i>
+     <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+     </div>
+  </header>
+  <div class="etc">
+    <li class="selected"><img src="1.jpg" alt=""></li>
+    <li><Img src="2.jpg" alt=""></li>
+      <li><Img src="5.jpg" alt=""></li>
+        <li><Img src="4.jpg" alt=""></li>
+  </div>
+    <section class="steps-section">
+        <div class="steps-container">
+            <h2>Langkah-langkah </h2>
+            <ol class="steps-list">
+                <li>
+                    <h3>Step 1: Sign Up or Log In</h3>
+                    <p>Buat akun terlebih dahulu jika sudah punya akun silahkan login.</p>
+                </li>
+                <li>
+                    <h3>Step 2: Search Books</h3>
+                    <p>Cari buku yang ingin kamu beli atau pinjam.</p>
+                </li>
+                <li>
+                    <h3>Step 3: Profil</h3>
+                    <p>kemudian lihat di profil kami ada penjelasan tentang 
+                        perpustakan GLYz.</p>
+                </li>
+                <li>
+                    <h3>Step 4: Book</h3>
+                    <p>klik book untuk melihat apakah ada buku yang kamu cari.</p>
+                </li>
+                <li>
+                    <h3>Step 5: Transaksi</h3>
+                    <p>Jika sudah dicari klik beli akan diarahkan ke forum transaksi dan
+                        tinggal menunggu pengiriman.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Perpustakaan GLYZ .</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="ig.jpg" alt="Instagram"></a>
+            <a href="#"><img src="Twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="tiktok.jpg" alt="Tiktok"></a>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    padding-top: 100px;
+}
+.homepage-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Tinggi header */
+    z-index: 1000;
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto 20px; /* Tambahkan margin atas untuk menghindari header */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.homepage-header {
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; 
+    height: 80px; 
+}
+.homepage-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.homepage-header p {
+    font-size: 1.2rem;
+}
+.steps-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 80px; /* Tambahkan margin sesuai tinggi header */
+}
+
+.steps-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.steps-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+
+.steps-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.steps-list {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+}
+
+.steps-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #1a73e8;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    position: relative;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
+    background-color: #1a73e8;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.steps-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.steps-list p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.homepage-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.homepage-footer p {
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background:rgb(127,148,255);
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer .social-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+  </style>
+</body>
+</html>
